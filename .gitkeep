@@ -1,0 +1,15 @@
+src/
+├── assets/
+│   ├── images/
+│   └── icons/
+├── components/
+│   └── .gitkeep
+├── hooks/
+│   └── .gitkeep
+├── pages/
+│   └── .gitkeep
+├── styles/
+│   └── index.css
+├── App.jsx
+└── main.jsx
+index.html
