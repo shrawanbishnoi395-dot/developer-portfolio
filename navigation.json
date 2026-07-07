@@ -1,0 +1,14 @@
+export const NAVIGATION_LINKS = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'certificates', label: 'Certificates' },
+  { id: 'contact', label: 'Contact' }
+];
+
+export const SOCIAL_LINKS = {
+  github: 'https://github.com',
+  linkedin: 'https://linkedin.com',
+  email: 'mailto:analytics@example.com'
+};
