@@ -1,0 +1,12 @@
+import React from 'react';
+
+export default function App() {
+  return (
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold text-brand-accent mb-2">Portfolio Shell Initialized</h1>
+        <p class="text-brand-textMuted">Data Analytics Architecture is ready for components.</p>
+      </div>
+    </div>
+  );
+}
