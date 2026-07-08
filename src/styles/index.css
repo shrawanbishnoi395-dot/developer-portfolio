@@ -2,24 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-brand-bg text-white font-sans antialiased selection:bg-brand-accent/30 selection:text-white;
-    overflow-x: hidden;
-  }
+:root {
+  --brand-bg: #1a1a2e;
+  --brand-accent: #00d4ff;
+  --brand-textMuted: #888;
 }
 
-/* Custom scrollbar layout for premium UX */
-::-webkit-scrollbar {
-  width: 8px;
+body {
+  @apply bg-brand-bg text-white;
 }
-::-webkit-scrollbar-track {
-  background: #0F172A;
+
+* {
+  @apply selection:bg-brand-accent/30;
 }
-::-webkit-scrollbar-thumb {
-  background: #1E293B;
-  border-radius: 4px;
+
+html {
+  scroll-behavior: smooth;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #38BDF8;
+
+@layer components {
+  .section {
+    @apply min-h-screen flex items-center justify-center px-4 py-20;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2 rounded-lg bg-brand-accent text-brand-bg font-semibold hover:opacity-80 transition;
+  }
 }
